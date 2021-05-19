@@ -30,8 +30,8 @@
 				<Lifecycle>
 					<AutoVisible>false</AutoVisible>
 					<StartOn>
-                        <Event>com.adobe.csxs.events.ApplicationActivate</Event>
-                    </StartOn>
+						 <Event>com.adobe.csxs.events.ApplicationActivate</Event>
+					</StartOn>
 				</Lifecycle>
 				
 				<UI>
