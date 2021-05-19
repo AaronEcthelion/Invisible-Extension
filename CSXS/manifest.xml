@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.ecthelion.invisible.extension" ExtensionBundleName="Invisible Extension" ExtensionBundleVersion="1.0.0" Version="5.0">
+	<ExtensionList>
+		<Extension Id="com.ecthelion.invisible.extension" Version="1.0"/>
+	</ExtensionList>
+
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="AEFT" Version="13.0"/>
+			<Host Name="PPRO" Version="9.0"/>
+		</HostList>
+
+		<LocaleList>
+			<Locale Code="All"/>
+		</LocaleList>
+
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="5.0"/>
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+
+	<DispatchInfoList>
+		<Extension Id="com.ecthelion.invisible.extension">
+			<DispatchInfo >
+				<Resources>
+					<MainPath>./index.html</MainPath>
+					<ScriptPath>./jsx/extendScript.jsx</ScriptPath>
+				</Resources>
+
+				<Lifecycle>
+					<AutoVisible>false</AutoVisible>
+					<StartOn>
+                        <Event>com.adobe.csxs.events.ApplicationActivate</Event>
+                    </StartOn>
+				</Lifecycle>
+				
+				<UI>
+					<Type>Custom</Type>		
+					<Geometry>
+						<Size>
+							<Height>100</Height>
+							<Width>100</Width>
+						</Size>
+					</Geometry>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
